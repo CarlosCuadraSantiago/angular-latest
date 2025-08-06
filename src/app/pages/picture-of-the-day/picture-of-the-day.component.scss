@@ -1,0 +1,13 @@
+:host {
+  display: block;
+
+  #imgOfTheDay {
+    display: grid;
+    justify-items: center;
+
+    .header {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

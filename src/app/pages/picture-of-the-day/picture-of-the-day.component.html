@@ -1,0 +1,14 @@
+@if (picOfTheDay()) {
+<section id="imgOfTheDay">
+  <div class="header">
+    <span class="description">{{ picOfTheDay()?.date }}</span>
+    <span class="title">{{ picOfTheDay()?.title }}</span>
+  </div>
+  <div class="description">
+    <span>{{ picOfTheDay()?.explanation }}</span>
+  </div>
+  <div class="picture">
+    <img [src]="picOfTheDay()?.url" width="500" height="600" />
+  </div>
+</section>
+}
